@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, ImagePlaceholder } from '@grahas/ui';
-import Link from 'next/link';
+import { ImagePlaceholder } from '@grahas/ui';
 
 const PageNotFound = () => {
   return (
@@ -16,9 +15,9 @@ const PageNotFound = () => {
           changed or is temporarily unavailable.
         </p>
       </div>
-      <Button>
+      {/* <Button>
         <Link href="/">Go to Homepage</Link>
-      </Button>
+      </Button> */}
     </div>
   );
 };
