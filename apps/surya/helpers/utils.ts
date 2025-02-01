@@ -1,7 +1,9 @@
+import { env } from '../env.mjs';
+
 export const siteConfig = {
   title: 'Bangalore Dream House',
   description: 'Bangalore Dream House',
   keywords: () => ['Bangalaore', 'dream ', 'house'],
-  url: () => process.env['APP_URL'] as string,
+  url: () => env.APP_URL,
   // googleSiteVerificationId: () => env.GOOGLE_SITE_VERIFICATION_ID || '',
 };

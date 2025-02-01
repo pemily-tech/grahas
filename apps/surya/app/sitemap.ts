@@ -1,9 +1,11 @@
 import { type MetadataRoute } from 'next';
 
+import { env } from '../env.mjs';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: process.env.APP_URL || '/',
+      url: env.APP_URL || '/',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
