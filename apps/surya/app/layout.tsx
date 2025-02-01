@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import '../assets/styles/globals.css';
 
 import { type PropsWithChildren } from 'react';
 import { cn } from '@grahas/utils';
