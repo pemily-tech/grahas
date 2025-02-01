@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@grahas/hooks": ["libs/hooks/src/index.ts"],
+      "@grahas/hooks/server": ["libs/hooks/src/server.ts"],
+      "@grahas/ui": ["libs/ui/src/index.ts"],
+      "@grahas/ui/server": ["libs/ui/src/server.ts"],
+      "@grahas/utils": ["libs/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
