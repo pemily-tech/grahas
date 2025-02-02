@@ -1,6 +1,7 @@
 import '../assets/styles/globals.css';
 
 import { type PropsWithChildren } from 'react';
+import { Toaster } from '@grahas/ui';
 import { cn } from '@grahas/utils';
 import { type Metadata } from 'next';
 
@@ -43,6 +44,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen font-sans', fonts)}>{children}</body>
+      <Toaster closeButton richColors position="bottom-left" />
     </html>
   );
 };
