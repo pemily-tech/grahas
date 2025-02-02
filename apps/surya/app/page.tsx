@@ -1,6 +1,7 @@
 import { ImagePlaceholder } from '@grahas/ui';
 
 import { Aminities } from './_ui/aminities';
+import Registration from './_ui/form';
 import { MasterPlan } from './_ui/master-plan';
 
 export default function Index() {
@@ -14,6 +15,12 @@ export default function Index() {
         containerClasses="h-screen w-full"
         imageClasses="object-cover"
       />
+      <div className="container py-8">
+        <div className="rounded-12 bg-white p-16">
+          <h3 className="text-32 font-medium">Register your Interest</h3>
+          <Registration />
+        </div>
+      </div>
       <div className="container py-8">
         <div className="rounded-12 bg-white p-16 ">
           <h2 className="text-32 font-medium">

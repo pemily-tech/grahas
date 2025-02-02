@@ -47,5 +47,8 @@
   "cSpell.words": ["Flashlist", "Lato"], // Custom words for spell checker
   "tailwindCSS.experimental.classRegex": [
     ["tv\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
-  ]
+  ],
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  }
 }
