@@ -43,8 +43,10 @@ export const generateMetadata = (): Metadata => ({
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn('min-h-screen font-sans', fonts)}>{children}</body>
-      <Toaster closeButton richColors position="bottom-left" />
+      <body className={cn('min-h-screen font-sans', fonts)}>
+        {children}
+        <Toaster closeButton richColors position="bottom-left" />
+      </body>
     </html>
   );
 };

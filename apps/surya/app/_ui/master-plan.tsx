@@ -47,8 +47,8 @@ export const MasterPlan = () => {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="size-[42px] lg:size-[54px]" />
+        <CarouselNext className="size-[42px] lg:size-[54px]" />
       </Carousel>
     </div>
   );
