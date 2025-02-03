@@ -95,7 +95,7 @@ export default function Registration() {
                 control={form.control}
                 name={name as keyof IFormData}
                 render={({ field: inputField, fieldState }) => (
-                  <FormItem className="relative col-span-1">
+                  <FormItem className="relative col-span-2 lg:col-span-1">
                     <FormControl>
                       <FloatingTextArea
                         label={label}
@@ -116,7 +116,7 @@ export default function Registration() {
               control={form.control}
               name={name as keyof IFormData}
               render={({ field, fieldState }) => (
-                <FormItem className="col-span-1">
+                <FormItem className="col-span-2 lg:col-span-1">
                   <FormControl>
                     <FloatingInput
                       label={label}

@@ -2,17 +2,18 @@ import { ImagePlaceholder } from '@grahas/ui';
 
 import { Aminities } from './_ui/aminities';
 import Registration from './_ui/form';
+import Header from './_ui/header';
 import { MasterPlan } from './_ui/master-plan';
+import RegistrationModal from './_ui/registration-modal';
 
 export default function Index() {
   return (
     <div className="relative">
-      <div className="absolute top-0 z-10 p-16">
-        <h1 className="text-24 text-white">Bangalore Dream House</h1>
-      </div>
+      <Header />
+      <RegistrationModal />
       <ImagePlaceholder
         src="/images/bg.jpeg"
-        containerClasses="h-screen w-full"
+        containerClasses="h-screen w-full mt-[72px]"
         imageClasses="object-cover"
       />
       <div className="container py-8">
@@ -21,7 +22,7 @@ export default function Index() {
           <Registration />
         </div>
       </div>
-      <div className="container py-8">
+      <div id="overview" className="container py-8">
         <div className="rounded-12 bg-white p-16 ">
           <h2 className="text-32 font-medium">
             Sobha Manhattan Towers - Townpark
@@ -64,7 +65,7 @@ export default function Index() {
         </div>
       </div>
       <div className="">
-        <div className="bg-white p-[32px]">
+        <div className="bg-white p-32">
           <p>
             Disclaimer: The content is for information purposes only and does
             not constitute an offer to avail of any service. Prices mentioned
