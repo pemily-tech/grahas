@@ -64,19 +64,21 @@ export default function Index() {
           </p>
         </div>
       </div>
-      <div className="">
-        <div className="bg-white p-32">
-          <p>
+      <div className="bg-gray-900 p-8 text-white">
+        <div className=" rounded-lg p-6 shadow-md">
+          <p className="text-sm">
             Disclaimer: The content is for information purposes only and does
             not constitute an offer to avail of any service. Prices mentioned
             are subject to change without notice and properties mentioned are
             subject to availability. Images for representation purposes only.
-            This is the official website of authorized marketing partner. We may
-            share data with RERA registered brokers/companies for further
-            processing. We may also send updates to the mobile number/email id
+            This is the official website of an authorized marketing partner. We
+            may share data with RERA registered brokers/companies for further
+            processing. We may also send updates to the mobile number/email ID
             registered with us. All Rights Reserved.
           </p>
-          <p>Pentagon Real Estate : RERA NO : A09600029014</p>
+          <p className="mt-4 font-semibold">
+            Pentagon Real Estate : RERA NO : A09600029014
+          </p>
         </div>
       </div>
     </div>

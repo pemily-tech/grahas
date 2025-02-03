@@ -32,6 +32,7 @@ export const MasterPlan = () => {
         />
       </div>
       <Carousel className="rounded-12 my-8 bg-white p-16">
+        <h2 className="text-24 font-medium">Gallery</h2>
         <CarouselContent>
           {data?.map((d, i) => {
             return (
