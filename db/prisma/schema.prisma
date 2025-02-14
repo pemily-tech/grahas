@@ -18,9 +18,7 @@ model Layout {
 model DreamHouseRegistration {
     id           Int      @id @default(autoincrement())
     name         String   @db.VarChar(255)
-    email        String   @db.VarChar(255)
-    city         String   @db.VarChar(255)
-    comment      String   @db.VarChar(15)
+    email        String?  @db.VarChar(255)
     mobileNumber String   @db.VarChar(255)
     createdAt    DateTime @default(now()) @db.Timestamp(6)
     updatedAt    DateTime @default(now()) @updatedAt @db.Timestamp(6)

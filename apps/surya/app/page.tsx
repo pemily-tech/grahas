@@ -1,3 +1,6 @@
+'use client';
+
+import { MouseEvent, useState } from 'react';
 import { ImagePlaceholder } from '@grahas/ui';
 
 import { Aminities } from './_ui/aminities';
@@ -7,15 +10,34 @@ import { MasterPlan } from './_ui/master-plan';
 import RegistrationModal from './_ui/registration-modal';
 
 export default function Index() {
+	const [show, setShow] = useState(true);
+
+	const handleContext = (e: MouseEvent<HTMLDivElement>) => {
+		e.preventDefault();
+		setShow(true);
+	};
+
 	return (
-		<div className="relative">
-			<Header />
-			<RegistrationModal />
-			<ImagePlaceholder
-				src="/images/bg.jpeg"
-				containerClasses="h-screen w-full mt-[72px]"
-				imageClasses="object-cover"
-			/>
+		<div onContextMenu={handleContext} className="relative">
+			{/* <Header /> */}
+			<RegistrationModal show={show} setShow={setShow} />
+			<div className="fixed right-0 top-1/2 -translate-y-1/2">
+				<div>
+					<ImagePlaceholder src="/images/cctv.png" containerClasses="w-24 h-24" />
+				</div>
+				<div>
+					<ImagePlaceholder src="/images/cctv.png" containerClasses="w-24 h-24" />
+				</div>
+			</div>
+			<video
+				src="/videos/bg2.mp4"
+				className="h-screen w-full object-cover"
+				autoPlay
+				muted
+				loop
+				playsInline
+			></video>
+
 			<div className="container py-8">
 				<div className="rounded-12 bg-white p-16">
 					<h3 className="text-32 font-medium">Register your Interest</h3>
