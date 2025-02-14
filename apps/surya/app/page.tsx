@@ -3,31 +3,53 @@
 import { MouseEvent, useState } from 'react';
 import { ImagePlaceholder } from '@grahas/ui';
 
-import { Aminities } from './_ui/aminities';
+import { About } from './_ui/about';
+import { Amenities } from './_ui/amenities';
 import Registration from './_ui/form';
+import { Gallery } from './_ui/gallery';
 import Header from './_ui/header';
-import { MasterPlan } from './_ui/master-plan';
+import { Location } from './_ui/location';
+import { Plan } from './_ui/plan';
+import { Pricing } from './_ui/pricing';
 import RegistrationModal from './_ui/registration-modal';
 
 export default function Index() {
 	const [show, setShow] = useState(true);
 
-	const handleContext = (e: MouseEvent<HTMLDivElement>) => {
-		e.preventDefault();
-		setShow(true);
-	};
+	const handleModalOpen = () => setShow(true);
 
 	return (
-		<div onContextMenu={handleContext} className="relative">
+		<div className="relative">
 			{/* <Header /> */}
-			<RegistrationModal show={show} setShow={setShow} />
-			<div className="fixed right-0 top-1/2 -translate-y-1/2">
-				<div>
-					<ImagePlaceholder src="/images/cctv.png" containerClasses="w-24 h-24" />
-				</div>
-				<div>
-					<ImagePlaceholder src="/images/cctv.png" containerClasses="w-24 h-24" />
-				</div>
+			<RegistrationModal setShow={setShow} show={show} />
+			<div className="bg-primary fixed right-0 top-1/2 z-50 flex -translate-y-1/2 flex-col gap-4 rounded-l-lg p-4 shadow-lg">
+				{/* Call Button */}
+				<a
+					href="tel:+1234567890" // Replace with your phone number
+					className="rounded-full p-3 shadow-md transition-all duration-300 hover:scale-110"
+					aria-label="Call Us"
+				>
+					<ImagePlaceholder
+						src="/images/telephone.png"
+						containerClasses="w-35 h-35" // Adjusted size for better proportions
+						alt="Call Icon"
+					/>
+				</a>
+
+				{/* WhatsApp Button */}
+				<a
+					href="https://wa.me/1234567890" // Replace with your WhatsApp link
+					target="_blank"
+					rel="noopener noreferrer"
+					className="rounded-full p-3 shadow-md transition-all duration-300 hover:scale-110"
+					aria-label="Chat on WhatsApp"
+				>
+					<ImagePlaceholder
+						src="/images/whatsApp.png"
+						containerClasses="w-35 h-35" // Adjusted size for better proportions
+						alt="WhatsApp Icon"
+					/>
+				</a>
 			</div>
 			<video
 				src="/videos/bg2.mp4"
@@ -40,59 +62,54 @@ export default function Index() {
 
 			<div className="container py-8">
 				<div className="rounded-12 bg-white p-16">
-					<h3 className="text-32 font-medium">Register your Interest</h3>
+					<h3 className="text-32 font-medium">ENQUIRE / BOOK A TRIP NOW</h3>
 					<Registration />
 				</div>
 			</div>
-			<div id="overview" className="container py-8">
+			<div onClick={handleModalOpen} id="overview" className="container py-8">
 				<div className="rounded-12 bg-white p-16 ">
-					<h2 className="text-32 font-medium">Sobha Manhattan Towers - Townpark</h2>
-					<span className="leading-16 font-medium">at Near Electronic City,</span>
+					<h2 className="text-24 font-medium">PROJECT DETAIL</h2>
 					<p className="my-12">
-						Bangalore SOBHA epitomizes “passion at work” in totality. For us it is not
-						only a catch phrase which sounds just right, rather we all strive to live it
-						daily. It serves as our compass which guides us towards creating world class
-						quality products and workmanship. It guides us to be transparent in all our
-						dealings and adhere to delivery on time, each time.
-					</p>
-					<p>
-						Our track record of being the most reliable and trustworthy builder with a
-						repertoire of award winning properties across India speaks for itself. We
-						changed the skyline in Bangalore, created landmark developments in Kerala
-						and have stepped into Delhi – NCR, Chennai, Coimbatore, Mysore, Pune and
-						many more to follow.
+						Capturing the spirit of New York City in the vibrant heart of Bengaluru,
+						Sobha Townpark redefines urban living with its thoughtfully designed,
+						NYC-themed township. Strategically located on Hosur Road near Electronic
+						City, this architectural masterpiece seamlessly blends modern elegance with
+						world-class amenities. Designed for families, professionals, and investors
+						alike, Sobha Townpark offers an unparalleled lifestyle—where sophistication
+						meets convenience in one of Bengaluru’s most sought-after locations.
 					</p>
 				</div>
 			</div>
-			<Aminities />
-			<MasterPlan />
-			<div className="container">
-				<div className="rounded-12 my-8 bg-white p-16">
-					<h2 className="text-24 font-medium">About The Developer</h2>
-					<p className="py-16">
-						Sobha Realty is an international luxury developer committed to redefining
-						the art of living through sustainable communities. Established in 1976 as an
-						interior decoration firm in Oman by PNC Menon – a visionary entrepreneur,
-						the company has grown its presence with developments and investments in the
-						UAE, Oman, Bahrain, Brunei and India. Over the last four decades, Sobha
-						Realty has also redefined the real estate value chain by leveraging its
-						inherent in-house capabilities of conceptualisation, design and development.
-					</p>
-				</div>
+
+			<div onClick={handleModalOpen}>
+				<Gallery />
+				<Amenities />
+				<Pricing />
+				<Plan />
+				<About />
 			</div>
-			<div className="bg-gray-900 p-8 text-white">
+			<Location />
+			<div onClick={handleModalOpen} className="bg-gray-900 p-8 text-white">
 				<div className=" rounded-lg p-6 shadow-md">
 					<p className="text-sm">
-						Disclaimer: The content is for information purposes only and does not
-						constitute an offer to avail of any service. Prices mentioned are subject to
-						change without notice and properties mentioned are subject to availability.
-						Images for representation purposes only. This is the official website of an
-						authorized marketing partner. We may share data with RERA registered
-						brokers/companies for further processing. We may also send updates to the
-						mobile number/email ID registered with us. All Rights Reserved.
+						Disclaimer: This website is an independent informational platform operated
+						by a RERA-authorized real estate consultancy and is not affiliated with any
+						developer. The information provided is for general reference only and does
+						not constitute an offer, commitment, or guarantee of services. Property
+						prices, availability, and other details are subject to change without prior
+						notice. Images shown are for illustrative purposes only and may not
+						accurately represent actual properties. By using this website, you
+						acknowledge that we may share your details with RERA-registered developers
+						for further assistance and may send relevant updates to your registered
+						contact information.
 					</p>
 					<p className="mt-4 font-semibold">
-						Pentagon Real Estate : RERA NO : A09600029014
+						Privacy Policy: All content, design, and information on this website are
+						protected by copyright and intellectual property laws. Any unauthorized use,
+						reproduction, or distribution of materials may lead to legal consequences.
+						For the most accurate, up-to-date details on services, pricing, and property
+						availability, please contact us directly using the information provided on
+						this website.
 					</p>
 				</div>
 			</div>
