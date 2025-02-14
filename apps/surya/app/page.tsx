@@ -31,7 +31,7 @@ export default function Index() {
 				>
 					<ImagePlaceholder
 						src="/images/telephone.png"
-						containerClasses="w-35 h-35" // Adjusted size for better proportions
+						containerClasses="w-40 h-40" // Adjusted size for better proportions
 						alt="Call Icon"
 					/>
 				</a>
@@ -46,7 +46,7 @@ export default function Index() {
 				>
 					<ImagePlaceholder
 						src="/images/whatsApp.png"
-						containerClasses="w-35 h-35" // Adjusted size for better proportions
+						containerClasses="w-40 h-40" // Adjusted size for better proportions
 						alt="WhatsApp Icon"
 					/>
 				</a>
@@ -60,7 +60,7 @@ export default function Index() {
 				playsInline
 			></video>
 
-			<div className="container py-8">
+			<div className="container mt-8">
 				<div className="rounded-12 bg-white p-16">
 					<h3 className="text-32 font-medium">ENQUIRE / BOOK A TRIP NOW</h3>
 					<Registration />
