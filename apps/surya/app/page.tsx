@@ -24,26 +24,19 @@ export default function Index() {
       </div>
       <div id="overview" className="container py-8">
         <div className="rounded-12 bg-white p-16 ">
-          <h2 className="text-32 font-medium">
-            Sobha Manhattan Towers - Townpark
-          </h2>
-          <span className="leading-16 font-medium">
-            at Near Electronic City,
-          </span>
+          <h2 className="text-32 font-medium">Project Detail</h2>
           <p className="my-12">
-            Bangalore SOBHA epitomizes “passion at work” in totality. For us it
-            is not only a catch phrase which sounds just right, rather we all
-            strive to live it daily. It serves as our compass which guides us
-            towards creating world class quality products and workmanship. It
-            guides us to be transparent in all our dealings and adhere to
-            delivery on time, each time.
-          </p>
-          <p>
-            Our track record of being the most reliable and trustworthy builder
-            with a repertoire of award winning properties across India speaks
-            for itself. We changed the skyline in Bangalore, created landmark
-            developments in Kerala and have stepped into Delhi – NCR, Chennai,
-            Coimbatore, Mysore, Pune and many more to follow.
+            Bringing the energy and sophistication of New York City to the
+            vibrant heart of Bengaluru,
+            <span className="font-medium">SOBHA TOWNPARK</span> redefines urban
+            living. Strategically located on Hosur Road near Electronic City,
+            this NYC-themed township blends contemporary architecture with
+            world-class amenities, offering a lifestyle as dynamic as the city
+            it’s inspired by. Designed for families, professionals, and
+            investors alike, <span className="font-medium">SOBHA TOWNPARK</span>{' '}
+            is more than just a residence—it’s a statement of modern luxury and
+            convenience, setting a new benchmark for upscale living in
+            Bengaluru.
           </p>
         </div>
       </div>

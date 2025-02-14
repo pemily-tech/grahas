@@ -23,16 +23,12 @@ import { registrationAction } from '../../actions/registration';
 type IFormData = {
   name: string;
   email: string;
-  city: string;
-  comment: string;
   mobileNumber: string;
 };
 
 const schema = z.object({
   name: z.string().min(1, { message: 'Name is required' }),
   email: z.string().email('Please enter a valid email address'),
-  city: z.string().min(1, { message: 'City is required' }),
-  comment: z.string().optional(),
   mobileNumber: z
     .string()
     .min(10, { message: 'Mobile number must be at least 10 digits' })
@@ -47,8 +43,6 @@ export default function Registration() {
       name: '',
       mobileNumber: '',
       email: '',
-      city: '',
-      comment: '',
     },
   });
   const { execute, result, isExecuting } = useAction(registrationAction);
@@ -85,8 +79,6 @@ export default function Registration() {
           ['name', 'Name', 'text'],
           ['mobileNumber', 'Mobile Number', 'numeric'],
           ['email', 'Email', 'email'],
-          ['city', 'City', 'text'],
-          ['comment', 'Comment', 'text', 'textarea'],
         ].map(([name, label, keyboard, type]) => {
           if (type === 'textarea') {
             return (

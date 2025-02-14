@@ -8,8 +8,8 @@ import { prisma, safeActionClient } from '../helpers';
 const schema = z.object({
   name: z.string().min(1, { message: 'Name is required' }),
   email: z.string().email('Please enter a valid email address'),
-  city: z.string().min(1, { message: 'City is required' }),
-  comment: z.string().optional(),
+  //   city: z.string().min(1, { message: 'City is required' }),
+  //   comment: z.string().optional(),
   mobileNumber: z
     .string()
     .min(10, { message: 'Mobile number must be at least 10 digits' })
@@ -20,15 +20,13 @@ const schema = z.object({
 export const registrationAction = safeActionClient
   .schema(schema)
   .action(async ({ parsedInput }) => {
-    const { name, email, city, comment, mobileNumber } = parsedInput;
+    const { name, email, mobileNumber } = parsedInput;
 
     try {
       await prisma.dreamHouseRegistration.create({
         data: {
           name,
           email,
-          city,
-          comment: comment ? comment : '',
           mobileNumber,
         },
       });
