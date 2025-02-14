@@ -80,9 +80,8 @@ export default function Index() {
 					</p>
 				</div>
 			</div>
-
+			<Gallery />
 			<div onClick={handleModalOpen}>
-				<Gallery />
 				<Amenities />
 				<Pricing />
 				<Plan />
