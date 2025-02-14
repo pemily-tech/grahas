@@ -13,7 +13,7 @@ export const Pricing = () => {
 
 	return (
 		<div className="container">
-			<div className="bg-white p-16">
+			<div className="rounded-12 my-8 bg-white p-16">
 				<h2 className="text-24 font-medium">PRICING</h2>
 				<p className="text-14 mt-8">
 					Discover Sobha Townpark, a sprawling 36-acre masterpiece inspired by the charm

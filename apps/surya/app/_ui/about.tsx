@@ -3,7 +3,7 @@ import React from 'react';
 export const About = () => {
 	return (
 		<div className="container">
-			<div className="bg-white p-16">
+			<div className="rounded-12 my-8 bg-white p-16">
 				<h2 className="text-24 font-medium">ABOUT SOBHA</h2>
 				<p className="py-16">
 					Sobha Realty is an international luxury developer committed to redefining the

@@ -4,7 +4,7 @@ import { ImagePlaceholder } from '@grahas/ui';
 export const Amenities = () => {
 	return (
 		<div className="container">
-			<div className="bg-white p-16">
+			<div className="rounded-12 my-8 bg-white p-16">
 				<h2 className="text-24 font-medium">AMENITIES</h2>
 				<div className="grid grid-cols-3 gap-12">
 					<div className="col-span-1 flex flex-col items-center justify-center border p-16">

@@ -35,8 +35,8 @@ const videos = [
 export const Gallery = () => {
 	return (
 		<div className="container">
-			<div className="rounded-12 my-8 min-h-[600px] bg-white p-16">
-				<h2 className="text-24 mb-4 font-medium">GALLERY (PHOTOS & VIDEOS)</h2>
+			<div className="rounded-12 min-h-[600px] bg-white p-16">
+				<h2 className="text-24 mb-4 font-medium">GALLERY</h2>
 
 				<Tabs defaultValue="videos" className="w-full">
 					<TabsList>
