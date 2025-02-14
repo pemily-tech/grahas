@@ -25,7 +25,7 @@ export default function Index() {
 			<div className="bg-primary fixed right-0 top-1/2 z-50 flex -translate-y-1/2 flex-col gap-4 rounded-l-lg p-4 shadow-lg">
 				{/* Call Button */}
 				<a
-					href="tel:+1234567890" // Replace with your phone number
+					href="tel:+917411109377" // Replace with your phone number
 					className="rounded-full p-3 shadow-md transition-all duration-300 hover:scale-110"
 					aria-label="Call Us"
 				>
@@ -38,7 +38,7 @@ export default function Index() {
 
 				{/* WhatsApp Button */}
 				<a
-					href="https://wa.me/1234567890" // Replace with your WhatsApp link
+					href="https://wa.me/7411109377" // Replace with your WhatsApp link
 					target="_blank"
 					rel="noopener noreferrer"
 					className="rounded-full p-3 shadow-md transition-all duration-300 hover:scale-110"
@@ -62,7 +62,7 @@ export default function Index() {
 
 			<div className="container mt-8">
 				<div className="rounded-12 bg-white p-16">
-					<h3 className="text-32 font-medium">ENQUIRE / BOOK A TRIP NOW</h3>
+					<h3 className="text-24 font-medium">ENQUIRE / BOOK A TRIP(FREE CAB) NOW</h3>
 					<Registration />
 				</div>
 			</div>

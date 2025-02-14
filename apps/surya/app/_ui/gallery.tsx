@@ -14,6 +14,7 @@ import {
 import { AspectRatio } from '@radix-ui/react-aspect-ratio';
 
 const photos = [
+	{ src: '/images/bg.jpeg' },
 	{ src: '/images/1.jpeg' },
 	{ src: '/images/2.jpeg' },
 	{ src: '/images/3.jpeg' },

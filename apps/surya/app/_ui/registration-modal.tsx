@@ -15,7 +15,7 @@ export default function RegistrationModal({
 		<Dialog open={show} onOpenChange={setShow}>
 			<DialogContent>
 				<DialogHeader>
-					<DialogTitle>ENQUIRE / BOOK A TRIP NOW</DialogTitle>
+					<DialogTitle>ENQUIRE / BOOK A TRIP(FREE CAB) NOW</DialogTitle>
 					<DialogDescription></DialogDescription>
 				</DialogHeader>
 				<Registration />
