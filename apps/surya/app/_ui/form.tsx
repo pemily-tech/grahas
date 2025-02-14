@@ -22,13 +22,13 @@ import { registrationAction } from '../../actions/registration';
 
 type IFormData = {
 	name: string;
-	email: string;
+	email?: string;
 	mobileNumber: string;
 };
 
 const schema = z.object({
 	name: z.string().min(1, { message: 'Name is required' }),
-	email: z.string().email('Please enter a valid email address'),
+	email: z.string().optional(),
 	mobileNumber: z
 		.string()
 		.min(10, { message: 'Mobile number must be at least 10 digits' })
@@ -49,6 +49,7 @@ export default function Registration() {
 
 	useEffect(() => {
 		if (!result || Object.keys(result).length <= 0) return;
+		console.log('result?.data', result?.data);
 
 		if (result?.data?.status === 200) {
 			toast.success(result?.data?.msg);
@@ -65,8 +66,13 @@ export default function Registration() {
 		}
 	}, [result.serverError]);
 
-	const onSubmit = async (values: IFormData) => {
-		execute(values);
+	const onSubmit = async (values: { name: string; mobileNumber: string; email?: string }) => {
+		const payload = {
+			mobileNumber: values.mobileNumber,
+			email: values?.email,
+			name: values?.name,
+		};
+		execute(payload);
 	};
 
 	return (

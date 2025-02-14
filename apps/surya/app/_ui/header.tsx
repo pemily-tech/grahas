@@ -21,10 +21,10 @@ export default function Header() {
 	};
 
 	return (
-		<header className="shadow-card1 fixed top-0 z-10 h-[72px] w-full">
+		<header className="shadow-card1 fixed top-0 z-10 h-[72px] w-full bg-white">
 			<div className="container flex h-full items-center justify-between">
-				<h1 className="text-24">
-					<Link href="/">Bangalore Dream House</Link>
+				<h1 className="text-24 font-medium">
+					<Link href="/">Sobha Town Park</Link>
 				</h1>
 				<div className="hidden lg:block">
 					<div className="cursor-pointer" onClick={() => scrollToComponent('overview')}>
