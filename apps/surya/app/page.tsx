@@ -52,6 +52,7 @@ export default function Index() {
 				</a>
 			</div>
 			<video
+				onClick={handleModalOpen}
 				src="/videos/bg2.mp4"
 				className="h-screen w-full object-cover"
 				autoPlay
