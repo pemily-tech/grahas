@@ -1,8 +1,9 @@
 import { env } from '../env.mjs';
 
 export const siteConfig = {
-	title: 'Sobha Town Park',
-	description: 'Sobha Town Park Homes',
+	title: 'Welcome to Sobha Townpark – Luxury NYC-Themed Residences in Bengaluru',
+	description:
+		"Experience luxury living at Sobha Townpark, Bengaluru's premier NYC-themed township offering modern residences with world-class amenities.",
 	keywords: () => [
 		'Sobha Town Park',
 		'Sobha Town Park Bengaluru',
