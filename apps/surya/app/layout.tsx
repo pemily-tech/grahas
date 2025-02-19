@@ -48,17 +48,19 @@ const RootLayout = ({ children }: PropsWithChildren) => {
 				{/* Google Tag Manager Script */}
 				<Script
 					async
-					src="https://www.googletagmanager.com/gtag/js?id=AW-16876355917"
-					strategy="afterInteractive"
+					src="https://www.googletagmanager.com/gtag/js?id=AW-16492952746"
+				></Script>
+				<Script
+					id="google-analytics"
+					dangerouslySetInnerHTML={{
+						__html: `
+							window.dataLayer = window.dataLayer || [];
+							function gtag(){dataLayer.push(arguments);}
+							gtag('js', new Date());
+							gtag('config', 'AW-16492952746');
+						`,
+					}}
 				/>
-				<Script id="google-analytics" strategy="afterInteractive">
-					{`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16876355917');
-          `}
-				</Script>
 			</head>
 			<body className={cn('min-h-screen font-sans', fonts)}>
 				{children}
