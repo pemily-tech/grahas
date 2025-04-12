@@ -16,11 +16,12 @@ export const Pricing = () => {
 			<div className="rounded-12 my-8 bg-white p-16">
 				<h2 className="text-24 font-medium">PRICING</h2>
 				<p className="text-14 mt-8">
-					Discover Sobha Townpark, a sprawling 36-acre masterpiece inspired by the charm
-					and energy of New York City. Strategically located on Hosur Main Road, just
-					before Attibele Toll, this premium residential enclave redefines luxury living.
-					With an intelligently designed layout and world-class amenities, Sobha Townpark
-					offers an unparalleled lifestyle, where elegance meets urban sophistication.{' '}
+					Discover Sobha Scarlet & Magnum, a sprawling 36-acre masterpiece inspired by the
+					charm and energy of New York City. Strategically located on Hosur Main Road,
+					just before Attibele Toll, this premium residential enclave redefines luxury
+					living. With an intelligently designed layout and world-class amenities, Sobha
+					Scarlet & Magnum offers an unparalleled lifestyle, where elegance meets urban
+					sophistication.{' '}
 				</p>
 				<div className="mt-16">
 					<h3 className="text-20 font-medium">
