@@ -22,7 +22,7 @@ export const toBase64 = (str: string) =>
 
 function ImagePlaceholder(props: ImagePlaceholderProps) {
 	const {
-		alt = 'shobhatownpark',
+		alt = 'shobhascarlet & magnum',
 		src,
 		containerClasses = '',
 		imageClasses,

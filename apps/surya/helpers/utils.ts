@@ -1,9 +1,9 @@
 import { env } from '../env.mjs';
 
 export const siteConfig = {
-	title: 'Sobha Townpark – NYC-Themed Luxury Residences in Bengaluru',
+	title: 'Sobha Scarlet & Magnum – NYC-Themed Luxury Residences in Bengaluru',
 	description:
-		"Experience luxury living at Sobha Townpark, Bengaluru's premier NYC-themed township offering modern residences with world-class amenities.",
+		"Experience luxury living at Sobha Scarlet & Magnum, Bengaluru's premier NYC-themed township offering modern residences with world-class amenities.",
 	keywords: () => [
 		'Sobha Town Park',
 		'Sobha Town Park Bengaluru',

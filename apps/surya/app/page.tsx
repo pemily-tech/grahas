@@ -24,7 +24,7 @@ export default function Index() {
 			<RegistrationModal setShow={setShow} show={show} />
 			<div className="bg-primary fixed right-0 top-1/2 z-50 flex -translate-y-1/2 flex-col gap-4 rounded-l-lg p-4 shadow-lg">
 				{/* Call Button */}
-				<a
+				{/* <a
 					href="tel:+917411109377" // Replace with your phone number
 					className="rounded-full p-3 shadow-md transition-all duration-300 hover:scale-110"
 					aria-label="Call Us"
@@ -34,10 +34,10 @@ export default function Index() {
 						containerClasses="w-40 h-40" // Adjusted size for better proportions
 						alt="Call Icon"
 					/>
-				</a>
+				</a> */}
 
 				{/* WhatsApp Button */}
-				<a
+				{/* <a
 					href="https://wa.me/7411109377" // Replace with your WhatsApp link
 					target="_blank"
 					rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export default function Index() {
 						containerClasses="w-40 h-40" // Adjusted size for better proportions
 						alt="WhatsApp Icon"
 					/>
-				</a>
+				</a> */}
 			</div>
 			<video
 				onClick={handleModalOpen}
@@ -72,12 +72,13 @@ export default function Index() {
 					<h2 className="text-24 font-medium">PROJECT DETAIL</h2>
 					<p className="my-12">
 						Capturing the spirit of New York City in the vibrant heart of Bengaluru,
-						Sobha Townpark redefines urban living with its thoughtfully designed,
-						NYC-themed township. Strategically located on Hosur Road near Electronic
-						City, this architectural masterpiece seamlessly blends modern elegance with
-						world-class amenities. Designed for families, professionals, and investors
-						alike, Sobha Townpark offers an unparalleled lifestyle—where sophistication
-						meets convenience in one of Bengaluru’s most sought-after locations.
+						Sobha Scarlet & Magnum redefines urban living with its thoughtfully
+						designed, NYC-themed township. Strategically located on Hosur Road near
+						Electronic City, this architectural masterpiece seamlessly blends modern
+						elegance with world-class amenities. Designed for families, professionals,
+						and investors alike, Sobha Scarlet & Magnum offers an unparalleled
+						lifestyle—where sophistication meets convenience in one of Bengaluru’s most
+						sought-after locations.
 					</p>
 				</div>
 			</div>
