@@ -8,6 +8,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 	DialogTrigger,
+	ImagePlaceholder,
 } from '@grahas/ui';
 import { MenuIcon } from 'lucide-react';
 import Link from 'next/link';
@@ -23,8 +24,10 @@ export default function Header() {
 	return (
 		<header className="shadow-card1 fixed top-0 z-10 h-[72px] w-full bg-white">
 			<div className="container flex h-full items-center justify-between">
+				<ImagePlaceholder src="/images/sobhamagnumlogo.png" containerClasses="w-50 h-50" />
+
 				<h1 className="text-24 font-medium">
-					<Link href="/">Sobha Town Park</Link>
+					<Link href="/">Sobha Magnum</Link>
 				</h1>
 				<div className="hidden lg:block">
 					<div className="cursor-pointer" onClick={() => scrollToComponent('overview')}>
