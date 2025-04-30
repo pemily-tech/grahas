@@ -1,7 +1,7 @@
 import { env } from '../env.mjs';
 
 export const siteConfig = {
-	title: 'Sobha Magnum – NYC-Themed Luxury Residences in Bengaluru',
+	title: 'Sobha Magnum – Luxury Residences in Bengaluru',
 	description:
 		"Experience luxury living at Sobha & Magnum, Bengaluru's premier township offering modern residences with world-class amenities.",
 	keywords: () => [
