@@ -20,7 +20,7 @@ export default function Index() {
 
 	return (
 		<div className="relative">
-			{/* <Header /> */}
+			<Header />
 			<RegistrationModal setShow={setShow} show={show} />
 			<div className="bg-primary fixed right-0 top-1/2 z-50 flex -translate-y-1/2 flex-col gap-4 rounded-l-lg p-4 shadow-lg">
 				{/* Call Button */}
@@ -51,7 +51,7 @@ export default function Index() {
 					/>
 				</a> */}
 			</div>
-			<video
+			{/* <video
 				onClick={handleModalOpen}
 				src="/videos/bg2.mp4"
 				className="h-screen w-full object-cover"
@@ -59,7 +59,14 @@ export default function Index() {
 				muted
 				loop
 				playsInline
-			></video>
+			></video> */}
+
+			<img
+				onClick={handleModalOpen}
+				src="/images/sobhamagnum.webp" // or your image path
+				className="h-screen w-full cursor-pointer object-cover"
+				alt="Background"
+			/>
 
 			<div className="container mt-8">
 				<div className="rounded-12 bg-white p-16">
@@ -69,16 +76,22 @@ export default function Index() {
 			</div>
 			<div onClick={handleModalOpen} id="overview" className="container py-8">
 				<div className="rounded-12 bg-white p-16 ">
-					<h2 className="text-24 font-medium">PROJECT DETAIL</h2>
+					<h2 className="text-24 font-medium">
+						PROJECT DETAIL - SOBHA MAGNUM (Bannerghatta Road, Bangalore)
+					</h2>
 					<p className="my-12">
-						Capturing the spirit of New York City in the vibrant heart of Bengaluru,
-						Sobha Scarlet & Magnum redefines urban living with its thoughtfully
-						designed, NYC-themed township. Strategically located on Hosur Road near
-						Electronic City, this architectural masterpiece seamlessly blends modern
-						elegance with world-class amenities. Designed for families, professionals,
-						and investors alike, Sobha Scarlet & Magnum offers an unparalleled
-						lifestyle—where sophistication meets convenience in one of Bengaluru’s most
-						sought-after locations.
+						Discover elevated living at <strong>Sobha Magnum</strong>, an upscale
+						residential project set in South Bangalore. This meticulously crafted
+						community spans 4 acres and comprises four residential towers, each soaring
+						up to 18 stories and collectively offering 294 premium apartments.
+					</p>
+					<p className="my-12">
+						Choose from elegantly designed 3 BHK and 4 BHK units tailored for
+						contemporary living. The 3 BHK homes are available in two
+						configurations—1750 sq. ft. and 1950 sq. ft.—while the larger 4 BHK
+						residences range from 2200 sq. ft. to 2800 sq. ft. Built with superior
+						materials and designed with modern sensibilities in mind, each unit combines
+						style with functionality to create a home you’ll love to live in.
 					</p>
 				</div>
 			</div>
@@ -88,8 +101,8 @@ export default function Index() {
 				<Pricing />
 				<Plan />
 				<About />
+				<Location />
 			</div>
-			<Location />
 			<div onClick={handleModalOpen} className="bg-gray-900 p-8 text-white">
 				<div className=" rounded-lg p-6 shadow-md">
 					<p className="text-sm">
