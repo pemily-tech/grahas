@@ -27,7 +27,7 @@ export default function Header() {
 				<ImagePlaceholder src="/images/sobhamagnumlogo.png" containerClasses="w-50 h-50" />
 
 				<h1 className="text-24 font-medium">
-					<Link href="/">Sobha Magnum</Link>
+					<Link href="/">SOBHA MAGNUM</Link>
 				</h1>
 				<div className="hidden lg:block">
 					<div className="cursor-pointer" onClick={() => scrollToComponent('overview')}>
