@@ -11,6 +11,7 @@ import Header from './_ui/header';
 import { Location } from './_ui/location';
 import { Plan } from './_ui/plan';
 import { Pricing } from './_ui/pricing';
+import { ProjectDetail } from './_ui/project-detail';
 import RegistrationModal from './_ui/registration-modal';
 
 export default function Index() {
@@ -74,28 +75,10 @@ export default function Index() {
 					<Registration />
 				</div>
 			</div>
-			<div onClick={handleModalOpen} id="overview" className="container py-8">
-				<div className="rounded-12 bg-white p-16 ">
-					<h2 className="text-24 font-medium">
-						PROJECT DETAIL - SOBHA MAGNUM (Bannerghatta Road, Bangalore)
-					</h2>
-					<p className="my-12">
-						Discover elevated living at <strong>Sobha Magnum</strong>, an upscale
-						residential project set in South Bangalore. This meticulously crafted
-						community spans 4 acres and comprises four residential towers, each soaring
-						up to 18 stories and collectively offering 294 premium apartments.
-					</p>
-					<p className="my-12">
-						Choose from elegantly designed 3 BHK and 4 BHK units tailored for
-						contemporary living. The 3 BHK homes are available in two
-						configurations—1750 sq. ft. and 1950 sq. ft.—while the larger 4 BHK
-						residences range from 2200 sq. ft. to 2800 sq. ft. Built with superior
-						materials and designed with modern sensibilities in mind, each unit combines
-						style with functionality to create a home you’ll love to live in.
-					</p>
-				</div>
+			<div onClick={handleModalOpen}>
+				<ProjectDetail />
 			</div>
-			<Gallery />
+			{/* <Gallery /> */}
 			<div onClick={handleModalOpen}>
 				<Amenities />
 				<Pricing />
